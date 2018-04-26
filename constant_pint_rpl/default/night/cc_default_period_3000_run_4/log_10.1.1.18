@@ -1,0 +1,76 @@
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_PAPER = "it_IT.UTF-8",
+	LC_ADDRESS = "it_IT.UTF-8",
+	LC_MONETARY = "it_IT.UTF-8",
+	LC_NUMERIC = "it_IT.UTF-8",
+	LC_TELEPHONE = "it_IT.UTF-8",
+	LC_IDENTIFICATION = "it_IT.UTF-8",
+	LC_MEASUREMENT = "it_IT.UTF-8",
+	LC_TIME = "it_IT.UTF-8",
+	LC_NAME = "it_IT.UTF-8",
+	LANG = "en_GB.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_GB.UTF-8").
+2018-04-08 00:39:36,256 - MainThread - SensorNodeFactory - INFO - skipping unknown node type
+2018-04-08 00:39:36,258 - MainThread - SensorNodeFactory - INFO - cc2538-bsl.py  -p /dev/ttyUSB1 -a 0x00202000
+Opening port /dev/ttyUSB1, baud 500000 address 0x202000
+Connecting to target...
+CC2538 PG2.0: 512KB Flash, 32KB SRAM, CCFG at 0x0027FFD4
+Primary IEEE Address: 00:12:4B:00:09:DF:8E:D9
+2018-04-08 00:39:37,531 - MainThread - SensorNodeFactory - INFO - b''
+2018-04-08 00:39:37,532 - MainThread - SensorNodeFactory - INFO - Found Zoul on /dev/ttyUSB1
+2018-04-08 00:39:40,126 - MainThread - CoAPWrapper.2 - INFO - sudo ../../agent_modules/contiki/communication_wrappers/bin/tunslip6 -C -B 115200 -s /dev/ttyUSB1 fd00:c:2::1/64
+<wishful_module_gitar.lib_arm_cortex_m.Zoul object at 0x736f8310>
+2018-04-08 00:39:41,237 - Thread-1   - CoAPWrapper.2 - INFO - ifconfig tun0 inet `hostname` mtu 1500 up
+2018-04-08 00:39:41,261 - Thread-1   - CoAPWrapper.2 - INFO - ifconfig tun0 add fd00:c:2::1/64
+2018-04-08 00:39:41,273 - Thread-1   - CoAPWrapper.2 - INFO - ifconfig tun0 add fe80::c:2:0:1/64
+2018-04-08 00:39:41,284 - Thread-1   - CoAPWrapper.2 - INFO - ifconfig tun0
+2018-04-08 00:39:41,286 - Thread-1   - CoAPWrapper.2 - INFO - 
+2018-04-08 00:39:41,294 - Thread-1   - CoAPWrapper.2 - INFO - tun0      Link encap:UNSPEC  HWaddr 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00
+2018-04-08 00:39:41,295 - Thread-1   - CoAPWrapper.2 - INFO - inet addr:127.0.0.1  P-t-P:127.0.0.1  Mask:255.255.255.255
+2018-04-08 00:39:41,297 - Thread-1   - CoAPWrapper.2 - INFO - inet6 addr: fe80::c:2:0:1/64 Scope:Link
+2018-04-08 00:39:41,297 - Thread-1   - CoAPWrapper.2 - INFO - inet6 addr: fd00:c:2::1/64 Scope:Global
+2018-04-08 00:39:41,298 - Thread-1   - CoAPWrapper.2 - INFO - UP POINTOPOINT RUNNING NOARP MULTICAST  MTU:1500  Metric:1
+2018-04-08 00:39:41,299 - Thread-1   - CoAPWrapper.2 - INFO - RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+2018-04-08 00:39:41,300 - Thread-1   - CoAPWrapper.2 - INFO - TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+2018-04-08 00:39:41,301 - Thread-1   - CoAPWrapper.2 - INFO - collisions:0 txqueuelen:500
+2018-04-08 00:39:41,302 - Thread-1   - CoAPWrapper.2 - INFO - RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+2018-04-08 00:39:41,303 - Thread-1   - CoAPWrapper.2 - INFO - 
+2018-04-08 00:39:41,862 - Thread-1   - CoAPWrapper.2 - INFO - Got configuration message of type C
+2018-04-08 00:39:41,863 - Thread-1   - CoAPWrapper.2 - INFO - Setting prefix fd00:c:2::
+2018-04-08 00:39:41,863 - Thread-1   - CoAPWrapper.2 - INFO - Removing wishful_control_address: fd00:c::2
+2018-04-08 00:39:41,864 - Thread-1   - CoAPWrapper.2 - INFO - New wishful_control_address: fd00:c:2::2
+2018-04-08 00:39:42,849 - Thread-1   - CoAPWrapper.2 - INFO - Control prefix set and apps started
+<Task pending coro=<coap_event_server() running at /export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/communication_wrappers/coap_wrapper.py:106>>
+2018-04-08 00:39:52,203 - Thread-3   - pyre_discovery_module.main - INFO - Discovered Controller DL-tcp://10.1.1.1:8990, UL-tcp://10.1.1.1:8989
+2018-04-08 00:40:23,021 - Thread-1   - CoAPWrapper.2 - INFO - PEEE 18
+2018-04-08 00:40:46,974 - Thread-1   - CoAPWrapper.2 - INFO - DEBUGG: RPL: Reset MRHOF
+local monitor cp started - Name: ecoap_local_monitoring_program_default_cc, Id: 1 - STARTED
+2018-04-08 00:41:00,274 - local_control_program - Contiki Base Connector - INFO - Attr coap_rx_success not found
+2018-04-08 00:41:02,326 - local_control_program - Contiki Base Connector - INFO - Attr coap_tx_failed not found
+2018-04-08 00:41:02,917 - Thread-1   - CoAPWrapper.2 - INFO - DEBUGG: RPL: Reset MRHOF
+2018-04-08 00:41:04,382 - local_control_program - Contiki Base Connector - INFO - Attr burst_end_event not found
+2018-04-08 00:41:05,427 - Thread-1   - CoAPWrapper.2 - INFO - Wishful generic-connector: ERROR ENOENT event 5902 not found!
+2018-04-08 00:41:06,447 - local_control_program - Contiki Base Connector - INFO - Attr burst_start_event not found
+2018-04-08 00:41:07,492 - Thread-1   - CoAPWrapper.2 - INFO - Wishful generic-connector: ERROR ENOENT event 5901 not found!
+2018-04-08 00:41:08,506 - local_control_program - Contiki Base Connector - INFO - Attr rpl_rank not found
+2018-04-08 00:41:09,513 - local_control_program - Contiki Base Connector - INFO - Attr rpl_rank not found
+2018-04-08 00:41:10,520 - local_control_program - Contiki Base Connector - INFO - Attr IEEE802154_measurement_macStats not found
+2018-04-08 00:41:10,521 - local_control_program - Contiki Base Connector - INFO - Attr coap_tx_failed not found
+2018-04-08 00:41:10,523 - local_control_program - Contiki Base Connector - INFO - Attr coap_rto not found
+2018-04-08 00:41:10,524 - local_control_program - Contiki Base Connector - INFO - Attr coap_tx_success not found
+2018-04-08 00:41:10,526 - local_control_program - Contiki Base Connector - INFO - Attr coap_rx_success not found
+2018-04-08 00:41:11,534 - local_control_program - Contiki Base Connector - INFO - Attr rpl_preferred_parent not found
+2018-04-08 00:41:11,535 - local_control_program - Contiki Base Connector - INFO - Attr app_stats not found
+2018-04-08 00:41:11,537 - local_control_program - Contiki Base Connector - INFO - Attr ipv6_stats not found
+2018-04-08 00:41:11,538 - local_control_program - Contiki Base Connector - INFO - Attr coap_tx_failed not found
+2018-04-08 00:41:11,539 - local_control_program - Contiki Base Connector - INFO - Attr coap_rto not found
+2018-04-08 00:41:11,540 - local_control_program - Contiki Base Connector - INFO - Attr coap_tx_success not found
+2018-04-08 00:41:11,541 - local_control_program - Contiki Base Connector - INFO - Attr coap_rx_success not found
+2018-04-08 00:41:11,543 - local_control_program - Contiki Base Connector - INFO - Attr rpl_rank not found
+2018-04-08 00:41:28,291 - Thread-1   - CoAPWrapper.2 - INFO - UDP client process startup initiated!
+2018-04-08 00:41:28,295 - Thread-1   - CoAPWrapper.2 - INFO - UDP client process started!
+bash: line 1: 13240 Terminated              python agent.py --config ecoap_external_advanced/ecoap_agent.yaml

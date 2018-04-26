@@ -1,0 +1,343 @@
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_PAPER = "it_IT.UTF-8",
+	LC_ADDRESS = "it_IT.UTF-8",
+	LC_MONETARY = "it_IT.UTF-8",
+	LC_NUMERIC = "it_IT.UTF-8",
+	LC_TELEPHONE = "it_IT.UTF-8",
+	LC_IDENTIFICATION = "it_IT.UTF-8",
+	LC_MEASUREMENT = "it_IT.UTF-8",
+	LC_TIME = "it_IT.UTF-8",
+	LC_NAME = "it_IT.UTF-8",
+	LANG = "en_GB.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_GB.UTF-8").
+2018-04-13 23:43:08,125 - MainThread - SensorNodeFactory - INFO - skipping unknown node type
+2018-04-13 23:43:08,127 - MainThread - SensorNodeFactory - INFO - cc2538-bsl.py  -p /dev/ttyUSB1 -a 0x00202000
+Opening port /dev/ttyUSB1, baud 500000 address 0x202000
+Connecting to target...
+CC2538 PG2.0: 512KB Flash, 32KB SRAM, CCFG at 0x0027FFD4
+Primary IEEE Address: 00:12:4B:00:10:03:52:FA
+2018-04-13 23:43:08,581 - MainThread - SensorNodeFactory - INFO - b''
+2018-04-13 23:43:08,583 - MainThread - SensorNodeFactory - INFO - Found Zoul on /dev/ttyUSB1
+2018-04-13 23:43:11,165 - MainThread - CoAPWrapper.2 - INFO - sudo ../../agent_modules/contiki/communication_wrappers/bin/tunslip6 -C -B 115200 -s /dev/ttyUSB1 fd00:c:2::1/64
+<wishful_module_gitar.lib_arm_cortex_m.Zoul object at 0x7370b8b0>
+2018-04-13 23:43:12,268 - Thread-1   - CoAPWrapper.2 - INFO - ifconfig tun0 inet `hostname` mtu 1500 up
+2018-04-13 23:43:12,297 - Thread-1   - CoAPWrapper.2 - INFO - ifconfig tun0 add fd00:c:2::1/64
+2018-04-13 23:43:12,314 - Thread-1   - CoAPWrapper.2 - INFO - ifconfig tun0 add fe80::c:2:0:1/64
+2018-04-13 23:43:12,325 - Thread-1   - CoAPWrapper.2 - INFO - ifconfig tun0
+2018-04-13 23:43:12,327 - Thread-1   - CoAPWrapper.2 - INFO - 
+2018-04-13 23:43:12,335 - Thread-1   - CoAPWrapper.2 - INFO - tun0      Link encap:UNSPEC  HWaddr 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00
+2018-04-13 23:43:12,336 - Thread-1   - CoAPWrapper.2 - INFO - inet addr:127.0.0.1  P-t-P:127.0.0.1  Mask:255.255.255.255
+2018-04-13 23:43:12,338 - Thread-1   - CoAPWrapper.2 - INFO - inet6 addr: fe80::c:2:0:1/64 Scope:Link
+2018-04-13 23:43:12,340 - Thread-1   - CoAPWrapper.2 - INFO - inet6 addr: fd00:c:2::1/64 Scope:Global
+2018-04-13 23:43:12,341 - Thread-1   - CoAPWrapper.2 - INFO - UP POINTOPOINT RUNNING NOARP MULTICAST  MTU:1500  Metric:1
+2018-04-13 23:43:12,342 - Thread-1   - CoAPWrapper.2 - INFO - RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+2018-04-13 23:43:12,343 - Thread-1   - CoAPWrapper.2 - INFO - TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+2018-04-13 23:43:12,344 - Thread-1   - CoAPWrapper.2 - INFO - collisions:0 txqueuelen:500
+2018-04-13 23:43:12,345 - Thread-1   - CoAPWrapper.2 - INFO - RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+2018-04-13 23:43:12,346 - Thread-1   - CoAPWrapper.2 - INFO - 
+2018-04-13 23:43:12,906 - Thread-1   - CoAPWrapper.2 - INFO - Got configuration message of type C
+2018-04-13 23:43:12,907 - Thread-1   - CoAPWrapper.2 - INFO - Setting prefix fd00:c:2::
+2018-04-13 23:43:12,908 - Thread-1   - CoAPWrapper.2 - INFO - Removing wishful_control_address: fd00:c::2
+2018-04-13 23:43:12,908 - Thread-1   - CoAPWrapper.2 - INFO - New wishful_control_address: fd00:c:2::2
+2018-04-13 23:43:13,893 - Thread-1   - CoAPWrapper.2 - INFO - Control prefix set and apps started
+<Task pending coro=<coap_event_server() running at /export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/communication_wrappers/coap_wrapper.py:106>>
+2018-04-13 23:43:24,270 - Thread-3   - pyre_discovery_module.main - INFO - Discovered Controller DL-tcp://10.1.1.1:8990, UL-tcp://10.1.1.1:8989
+2018-04-13 23:43:26,271 - Thread-3   - pyre_discovery_module.main - INFO - Discovered Controller DL-tcp://10.1.1.1:8990, UL-tcp://10.1.1.1:8989
+2018-04-13 23:43:48,961 - Thread-1   - CoAPWrapper.2 - INFO - PEEE 21
+2018-04-13 23:44:16,137 - Thread-1   - CoAPWrapper.2 - INFO - DEBUGG: RPL: Reset MRHOF
+local monitor cp started - Name: ecoap_local_monitoring_program_default_cc, Id: 1 - STARTED
+2018-04-13 23:44:31,707 - Thread-1   - CoAPWrapper.2 - INFO - DEBUGG: RPL: Reset MRHOF
+2018-04-13 23:44:32,153 - local_control_program - Contiki Base Connector - INFO - Attr coap_rx_success not found
+2018-04-13 23:44:34,198 - local_control_program - Contiki Base Connector - INFO - Attr coap_tx_failed not found
+2018-04-13 23:44:36,249 - local_control_program - Contiki Base Connector - INFO - Attr burst_end_event not found
+2018-04-13 23:44:38,296 - local_control_program - Contiki Base Connector - INFO - Attr burst_start_event not found
+2018-04-13 23:44:40,342 - local_control_program - Contiki Base Connector - INFO - Attr rpl_rank not found
+2018-04-13 23:44:41,347 - local_control_program - Contiki Base Connector - INFO - Attr rpl_rank not found
+2018-04-13 23:44:42,352 - local_control_program - Contiki Base Connector - INFO - Attr coap_rx_success not found
+2018-04-13 23:44:42,353 - local_control_program - Contiki Base Connector - INFO - Attr coap_tx_failed not found
+2018-04-13 23:44:42,355 - local_control_program - Contiki Base Connector - INFO - Attr capacity not found
+2018-04-13 23:44:42,356 - local_control_program - Contiki Base Connector - INFO - Attr burst_end_event not found
+2018-04-13 23:44:42,357 - local_control_program - Contiki Base Connector - INFO - Attr IEEE802154_measurement_macStats not found
+2018-04-13 23:44:42,358 - local_control_program - Contiki Base Connector - INFO - Attr coap_tx_success not found
+2018-04-13 23:44:42,359 - local_control_program - Contiki Base Connector - INFO - Attr coap_rto not found
+2018-04-13 23:44:42,360 - local_control_program - Contiki Base Connector - INFO - Attr burst_start_event not found
+2018-04-13 23:44:43,366 - local_control_program - Contiki Base Connector - INFO - Attr coap_rx_success not found
+2018-04-13 23:44:43,367 - local_control_program - Contiki Base Connector - INFO - Attr coap_tx_failed not found
+2018-04-13 23:44:43,368 - local_control_program - Contiki Base Connector - INFO - Attr rpl_rank not found
+2018-04-13 23:44:43,369 - local_control_program - Contiki Base Connector - INFO - Attr capacity not found
+2018-04-13 23:44:43,370 - local_control_program - Contiki Base Connector - INFO - Attr burst_end_event not found
+2018-04-13 23:44:43,371 - local_control_program - Contiki Base Connector - INFO - Attr coap_tx_success not found
+2018-04-13 23:44:43,372 - local_control_program - Contiki Base Connector - INFO - Attr coap_rto not found
+2018-04-13 23:44:43,373 - local_control_program - Contiki Base Connector - INFO - Attr ipv6_stats not found
+2018-04-13 23:44:43,374 - local_control_program - Contiki Base Connector - INFO - Attr rpl_preferred_parent not found
+2018-04-13 23:44:43,375 - local_control_program - Contiki Base Connector - INFO - Attr burst_start_event not found
+2018-04-13 23:44:43,376 - local_control_program - Contiki Base Connector - INFO - Attr app_stats not found
+2018-04-13 23:45:09,386 - Thread-1   - CoAPWrapper.2 - INFO - UDP client process startup initiated!
+2018-04-13 23:45:09,389 - Thread-1   - CoAPWrapper.2 - INFO - UDP client process started!
+2018-04-13 23:45:34,882 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 10
+2018-04-13 23:45:35,382 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 11
+2018-04-13 23:46:13,382 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 87
+2018-04-13 23:46:13,883 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 88
+2018-04-13 23:46:23,382 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 107
+2018-04-13 23:46:25,383 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 111
+2018-04-13 23:46:25,883 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 112
+2018-04-13 23:46:26,383 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 113
+2018-04-13 23:46:26,882 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 114
+2018-04-13 23:46:27,382 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 115
+2018-04-13 23:46:27,882 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 116
+2018-04-13 23:46:28,383 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 117
+2018-04-13 23:46:28,883 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 118
+2018-04-13 23:46:29,383 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 119
+2018-04-13 23:46:29,882 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 120
+2018-04-13 23:46:30,382 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 121
+2018-04-13 23:46:30,882 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 122
+2018-04-13 23:46:44,383 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 149
+2018-04-13 23:46:48,883 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 158
+2018-04-13 23:47:04,889 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 190
+Traceback (most recent call last):
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/wishful_module_contikibase/net_connector_module.py", line 25, in set_net_parameter
+    return node.set_parameters(param_list, param_key_values_dict)
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/wishful_module_gitar/rpc_node.py", line 203, in set_parameters
+    resp_key_values[param.name] = ControlDataType(self.platform.endianness_fmt, self.platform.get_data_type_format_by_name('INT8')).read_bytes(response_message[line_ptr:])
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/wishful_module_gitar/lib_gitar.py", line 38, in read_bytes
+    tpl = struct.unpack(tmp_fmt, buf)
+struct.error: unpack requires a bytes object of length 1
+2018-04-13 23:48:36,389 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 373
+2018-04-13 23:48:36,890 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 374
+2018-04-13 23:49:22,889 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 466
+2018-04-13 23:49:29,390 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 479
+2018-04-13 23:49:29,890 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 480
+2018-04-13 23:49:43,889 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 508
+Traceback (most recent call last):
+2018-04-13 23:49:44,288 - Thread-1   - CoAPWrapper.2 - INFO - OVERFLOW COAP: TRANS OVER
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/wishful_module_contikibase/net_connector_module.py", line 56, in get_net_measurements_periodic_worker
+    ret = node.read_measurements(measurement_list)
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/wishful_module_gitar/rpc_node.py", line 274, in read_measurements
+    resp_key_values[measurement.name] = measurement.datatype.read_bytes(response_message[line_ptr:])
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/wishful_module_gitar/lib_gitar.py", line 38, in read_bytes
+    tpl = struct.unpack(tmp_fmt, buf)
+struct.error: unpack requires a bytes object of length 16
+2018-04-13 23:49:44,339 - Dummy-591  - coap - INFO - Response not recognized - sending RST.
+2018-04-13 23:50:14,161 - Dummy-31   - coap - INFO - Response not recognized - sending RST.
+2018-04-13 23:50:14,362 - Dummy-26   - coap - INFO - Response not recognized - sending RST.
+2018-04-13 23:50:38,889 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 618
+2018-04-13 23:50:39,389 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 619
+2018-04-13 23:50:50,889 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 642
+2018-04-13 23:50:51,388 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 643
+2018-04-13 23:51:17,353 - Dummy-593  - coap.requester - INFO - Request timed out
+Traceback (most recent call last):
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/wishful_module_contikibase/net_connector_module.py", line 25, in set_net_parameter
+    return node.set_parameters(param_list, param_key_values_dict)
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/wishful_module_gitar/rpc_node.py", line 196, in set_parameters
+    response_message = self.com_wrapper.send(request_message)
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/communication_wrappers/coap_wrapper.py", line 86, in send
+    send_loop.run_until_complete(self.coap_send(send_loop, payload))
+  File "/usr/lib/python3.4/asyncio/base_events.py", line 276, in run_until_complete
+    return future.result()
+  File "/usr/lib/python3.4/asyncio/futures.py", line 277, in result
+    raise self._exception
+  File "/usr/lib/python3.4/asyncio/tasks.py", line 233, in _step
+    result = coro.throw(exc)
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/communication_wrappers/coap_wrapper.py", line 73, in coap_send
+    response = yield from context.request(request).response
+  File "/usr/lib/python3.4/asyncio/futures.py", line 388, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.4/asyncio/tasks.py", line 286, in _wakeup
+    value = future.result()
+  File "/usr/lib/python3.4/asyncio/futures.py", line 277, in result
+    raise self._exception
+aiocoap.error.RequestTimedOut
+2018-04-13 23:51:17,410 - Dummy-591  - coap.requester - INFO - Request timed out
+Traceback (most recent call last):
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/wishful_module_contikibase/net_connector_module.py", line 25, in set_net_parameter
+    return node.set_parameters(param_list, param_key_values_dict)
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/wishful_module_gitar/rpc_node.py", line 196, in set_parameters
+    response_message = self.com_wrapper.send(request_message)
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/communication_wrappers/coap_wrapper.py", line 86, in send
+    send_loop.run_until_complete(self.coap_send(send_loop, payload))
+  File "/usr/lib/python3.4/asyncio/base_events.py", line 276, in run_until_complete
+    return future.result()
+  File "/usr/lib/python3.4/asyncio/futures.py", line 277, in result
+    raise self._exception
+  File "/usr/lib/python3.4/asyncio/tasks.py", line 233, in _step
+    result = coro.throw(exc)
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/communication_wrappers/coap_wrapper.py", line 73, in coap_send
+    response = yield from context.request(request).response
+  File "/usr/lib/python3.4/asyncio/futures.py", line 388, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.4/asyncio/tasks.py", line 286, in _wakeup
+    value = future.result()
+  File "/usr/lib/python3.4/asyncio/futures.py", line 277, in result
+    raise self._exception
+aiocoap.error.RequestTimedOut
+2018-04-13 23:51:47,148 - Dummy-31   - coap.requester - INFO - Request timed out
+2018-04-13 23:51:47,439 - Dummy-26   - coap.requester - INFO - Request timed out
+Traceback (most recent call last):
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/wishful_module_contikibase/net_connector_module.py", line 56, in get_net_measurements_periodic_worker
+    ret = node.read_measurements(measurement_list)
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/wishful_module_gitar/rpc_node.py", line 267, in read_measurements
+    response_message = self.com_wrapper.send(request_message)
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/communication_wrappers/coap_wrapper.py", line 86, in send
+    send_loop.run_until_complete(self.coap_send(send_loop, payload))
+  File "/usr/lib/python3.4/asyncio/base_events.py", line 276, in run_until_complete
+    return future.result()
+  File "/usr/lib/python3.4/asyncio/futures.py", line 277, in result
+    raise self._exception
+  File "/usr/lib/python3.4/asyncio/tasks.py", line 233, in _step
+    result = coro.throw(exc)
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/communication_wrappers/coap_wrapper.py", line 73, in coap_send
+    response = yield from context.request(request).response
+  File "/usr/lib/python3.4/asyncio/futures.py", line 388, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.4/asyncio/tasks.py", line 286, in _wakeup
+    value = future.result()
+  File "/usr/lib/python3.4/asyncio/futures.py", line 277, in result
+    raise self._exception
+aiocoap.error.RequestTimedOut
+2018-04-13 23:52:17,499 - Dummy-26   - coap - INFO - Response not recognized - sending RST.
+2018-04-13 23:52:32,889 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 846
+2018-04-13 23:52:33,388 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 847
+2018-04-13 23:52:40,389 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 861
+2018-04-13 23:52:40,888 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 862
+2018-04-13 23:52:45,389 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 871
+2018-04-13 23:52:45,889 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 872
+2018-04-13 23:53:49,388 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 999
+2018-04-13 23:53:49,888 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1000
+2018-04-13 23:53:50,388 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1001
+2018-04-13 23:53:50,576 - Dummy-26   - coap.requester - INFO - Request timed out
+Traceback (most recent call last):
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/wishful_module_contikibase/net_connector_module.py", line 56, in get_net_measurements_periodic_worker
+    ret = node.read_measurements(measurement_list)
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/wishful_module_gitar/rpc_node.py", line 267, in read_measurements
+    response_message = self.com_wrapper.send(request_message)
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/communication_wrappers/coap_wrapper.py", line 86, in send
+    send_loop.run_until_complete(self.coap_send(send_loop, payload))
+  File "/usr/lib/python3.4/asyncio/base_events.py", line 276, in run_until_complete
+    return future.result()
+  File "/usr/lib/python3.4/asyncio/futures.py", line 277, in result
+    raise self._exception
+  File "/usr/lib/python3.4/asyncio/tasks.py", line 233, in _step
+    result = coro.throw(exc)
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/communication_wrappers/coap_wrapper.py", line 73, in coap_send
+    response = yield from context.request(request).response
+  File "/usr/lib/python3.4/asyncio/futures.py", line 388, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.4/asyncio/tasks.py", line 286, in _wakeup
+    value = future.result()
+  File "/usr/lib/python3.4/asyncio/futures.py", line 277, in result
+    raise self._exception
+aiocoap.error.RequestTimedOut
+2018-04-13 23:53:50,888 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1002
+2018-04-13 23:53:51,388 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1003
+2018-04-13 23:53:51,889 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1004
+2018-04-13 23:53:52,388 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1005
+2018-04-13 23:53:52,888 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1006
+2018-04-13 23:53:53,388 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1007
+2018-04-13 23:53:53,888 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1008
+2018-04-13 23:53:54,388 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1009
+2018-04-13 23:53:54,888 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1010
+2018-04-13 23:53:55,389 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1011
+2018-04-13 23:54:20,642 - Dummy-26   - coap - INFO - Response not recognized - sending RST.
+2018-04-13 23:54:45,387 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1111
+2018-04-13 23:54:45,887 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1112
+2018-04-13 23:54:53,387 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1127
+2018-04-13 23:54:53,888 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1128
+2018-04-13 23:55:27,387 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1195
+2018-04-13 23:55:27,887 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1196
+2018-04-13 23:55:53,704 - Dummy-26   - coap.requester - INFO - Request timed out
+Traceback (most recent call last):
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/wishful_module_contikibase/net_connector_module.py", line 56, in get_net_measurements_periodic_worker
+    ret = node.read_measurements(measurement_list)
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/wishful_module_gitar/rpc_node.py", line 267, in read_measurements
+    response_message = self.com_wrapper.send(request_message)
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/communication_wrappers/coap_wrapper.py", line 86, in send
+    send_loop.run_until_complete(self.coap_send(send_loop, payload))
+  File "/usr/lib/python3.4/asyncio/base_events.py", line 276, in run_until_complete
+    return future.result()
+  File "/usr/lib/python3.4/asyncio/futures.py", line 277, in result
+    raise self._exception
+  File "/usr/lib/python3.4/asyncio/tasks.py", line 233, in _step
+    result = coro.throw(exc)
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/communication_wrappers/coap_wrapper.py", line 73, in coap_send
+    response = yield from context.request(request).response
+  File "/usr/lib/python3.4/asyncio/futures.py", line 388, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.4/asyncio/tasks.py", line 286, in _wakeup
+    value = future.result()
+  File "/usr/lib/python3.4/asyncio/futures.py", line 277, in result
+    raise self._exception
+aiocoap.error.RequestTimedOut
+2018-04-13 23:56:23,760 - Dummy-26   - coap - INFO - Response not recognized - sending RST.
+2018-04-13 23:56:25,887 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1312
+2018-04-13 23:56:26,387 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1313
+2018-04-13 23:56:59,387 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1379
+2018-04-13 23:56:59,887 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1380
+2018-04-13 23:57:14,387 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1409
+2018-04-13 23:57:14,887 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1410
+2018-04-13 23:57:26,387 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1433
+2018-04-13 23:57:26,887 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1434
+2018-04-13 23:57:56,838 - Dummy-26   - coap.requester - INFO - Request timed out
+Traceback (most recent call last):
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/wishful_module_contikibase/net_connector_module.py", line 56, in get_net_measurements_periodic_worker
+    ret = node.read_measurements(measurement_list)
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/wishful_module_gitar/rpc_node.py", line 267, in read_measurements
+    response_message = self.com_wrapper.send(request_message)
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/communication_wrappers/coap_wrapper.py", line 86, in send
+    send_loop.run_until_complete(self.coap_send(send_loop, payload))
+  File "/usr/lib/python3.4/asyncio/base_events.py", line 276, in run_until_complete
+    return future.result()
+  File "/usr/lib/python3.4/asyncio/futures.py", line 277, in result
+    raise self._exception
+  File "/usr/lib/python3.4/asyncio/tasks.py", line 233, in _step
+    result = coro.throw(exc)
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/communication_wrappers/coap_wrapper.py", line 73, in coap_send
+    response = yield from context.request(request).response
+  File "/usr/lib/python3.4/asyncio/futures.py", line 388, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.4/asyncio/tasks.py", line 286, in _wakeup
+    value = future.result()
+  File "/usr/lib/python3.4/asyncio/futures.py", line 277, in result
+    raise self._exception
+aiocoap.error.RequestTimedOut
+2018-04-13 23:58:05,386 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1511
+2018-04-13 23:58:05,887 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1512
+2018-04-13 23:58:26,905 - Dummy-26   - coap - INFO - Response not recognized - sending RST.
+2018-04-13 23:58:31,394 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1563
+2018-04-13 23:58:31,894 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1564
+2018-04-13 23:59:59,982 - Dummy-26   - coap.requester - INFO - Request timed out
+Traceback (most recent call last):
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/wishful_module_contikibase/net_connector_module.py", line 56, in get_net_measurements_periodic_worker
+    ret = node.read_measurements(measurement_list)
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/wishful_module_gitar/rpc_node.py", line 267, in read_measurements
+    response_message = self.com_wrapper.send(request_message)
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/communication_wrappers/coap_wrapper.py", line 86, in send
+    send_loop.run_until_complete(self.coap_send(send_loop, payload))
+  File "/usr/lib/python3.4/asyncio/base_events.py", line 276, in run_until_complete
+    return future.result()
+  File "/usr/lib/python3.4/asyncio/futures.py", line 277, in result
+    raise self._exception
+  File "/usr/lib/python3.4/asyncio/tasks.py", line 233, in _step
+    result = coro.throw(exc)
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/communication_wrappers/coap_wrapper.py", line 73, in coap_send
+    response = yield from context.request(request).response
+  File "/usr/lib/python3.4/asyncio/futures.py", line 388, in __iter__
+    yield self  # This tells Task to wait for completion.
+  File "/usr/lib/python3.4/asyncio/tasks.py", line 286, in _wakeup
+    value = future.result()
+  File "/usr/lib/python3.4/asyncio/futures.py", line 277, in result
+    raise self._exception
+aiocoap.error.RequestTimedOut
+2018-04-14 00:00:23,393 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1787
+2018-04-14 00:00:23,894 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1788
+2018-04-14 00:00:29,893 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1800
+2018-04-14 00:00:30,050 - Dummy-26   - coap - INFO - Response not recognized - sending RST.
+2018-04-14 00:00:30,394 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1801
+2018-04-14 00:00:53,893 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1848
+2018-04-14 00:00:54,394 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1849
+2018-04-14 00:00:56,894 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1854
+2018-04-14 00:00:57,393 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1855
+bash: line 1: 24956 Terminated              python agent.py --config ecoap_external_advanced/ecoap_agent.yaml

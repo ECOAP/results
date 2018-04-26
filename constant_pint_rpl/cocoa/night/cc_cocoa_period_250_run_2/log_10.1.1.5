@@ -1,0 +1,156 @@
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_PAPER = "it_IT.UTF-8",
+	LC_ADDRESS = "it_IT.UTF-8",
+	LC_MONETARY = "it_IT.UTF-8",
+	LC_NUMERIC = "it_IT.UTF-8",
+	LC_TELEPHONE = "it_IT.UTF-8",
+	LC_IDENTIFICATION = "it_IT.UTF-8",
+	LC_MEASUREMENT = "it_IT.UTF-8",
+	LC_TIME = "it_IT.UTF-8",
+	LC_NAME = "it_IT.UTF-8",
+	LANG = "en_GB.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_GB.UTF-8").
+2018-04-19 07:26:48,518 - SensorNodeFactory.create_nodes_auto() - INFO - skipping unknown node type
+2018-04-19 07:26:48,520 - SensorNodeFactory.create_nodes_auto() - INFO - cc2538-bsl.py  -p /dev/ttyUSB1 -a 0x00202000
+Opening port /dev/ttyUSB1, baud 500000 address 0x202000
+Connecting to target...
+CC2538 PG2.0: 512KB Flash, 32KB SRAM, CCFG at 0x0027FFD4
+Primary IEEE Address: 00:12:4B:00:10:03:54:32
+2018-04-19 07:26:49,450 - SensorNodeFactory.create_nodes_auto() - INFO - b''
+2018-04-19 07:26:49,452 - SensorNodeFactory.create_nodes_auto() - INFO - Found Zoul on /dev/ttyUSB1
+2018-04-19 07:26:52,032 - CoAPWrapper.2.__init__() - INFO - sudo ../../agent_modules/contiki/communication_wrappers/bin/tunslip6 -C -B 115200 -s /dev/ttyUSB1 fd00:c:2::1/64
+<wishful_module_gitar.lib_arm_cortex_m.Zoul object at 0x73753570>
+2018-04-19 07:26:53,135 - Thread-1   - CoAPWrapper.2 - INFO - ifconfig tun0 inet `hostname` mtu 1500 up
+2018-04-19 07:26:53,159 - Thread-1   - CoAPWrapper.2 - INFO - ifconfig tun0 add fd00:c:2::1/64
+2018-04-19 07:26:53,171 - Thread-1   - CoAPWrapper.2 - INFO - ifconfig tun0 add fe80::c:2:0:1/64
+2018-04-19 07:26:53,180 - Thread-1   - CoAPWrapper.2 - INFO - ifconfig tun0
+2018-04-19 07:26:53,182 - Thread-1   - CoAPWrapper.2 - INFO - 
+2018-04-19 07:26:53,190 - Thread-1   - CoAPWrapper.2 - INFO - tun0      Link encap:UNSPEC  HWaddr 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00
+2018-04-19 07:26:53,191 - Thread-1   - CoAPWrapper.2 - INFO - inet addr:127.0.0.1  P-t-P:127.0.0.1  Mask:255.255.255.255
+2018-04-19 07:26:53,192 - Thread-1   - CoAPWrapper.2 - INFO - inet6 addr: fe80::c:2:0:1/64 Scope:Link
+2018-04-19 07:26:53,193 - Thread-1   - CoAPWrapper.2 - INFO - inet6 addr: fd00:c:2::1/64 Scope:Global
+2018-04-19 07:26:53,194 - Thread-1   - CoAPWrapper.2 - INFO - UP POINTOPOINT RUNNING NOARP MULTICAST  MTU:1500  Metric:1
+2018-04-19 07:26:53,195 - Thread-1   - CoAPWrapper.2 - INFO - RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+2018-04-19 07:26:53,196 - Thread-1   - CoAPWrapper.2 - INFO - TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+2018-04-19 07:26:53,197 - Thread-1   - CoAPWrapper.2 - INFO - collisions:0 txqueuelen:500
+2018-04-19 07:26:53,198 - Thread-1   - CoAPWrapper.2 - INFO - RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+2018-04-19 07:26:53,199 - Thread-1   - CoAPWrapper.2 - INFO - 
+2018-04-19 07:26:53,774 - Thread-1   - CoAPWrapper.2 - INFO - Got configuration message of type C
+2018-04-19 07:26:53,776 - Thread-1   - CoAPWrapper.2 - INFO - Setting prefix fd00:c:2::
+2018-04-19 07:26:53,777 - Thread-1   - CoAPWrapper.2 - INFO - Removing wishful_control_address: fd00:c::2
+2018-04-19 07:26:53,778 - Thread-1   - CoAPWrapper.2 - INFO - New wishful_control_address: fd00:c:2::2
+2018-04-19 07:26:54,760 - Thread-1   - CoAPWrapper.2 - INFO - Control prefix set and apps started
+<Task pending coro=<coap_event_server() running at /export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/communication_wrappers/coap_wrapper.py:106>>
+2018-04-19 07:27:04,384 - Thread-3   - pyre_discovery_module.main - INFO - Discovered Controller DL-tcp://10.1.1.1:8990, UL-tcp://10.1.1.1:8989
+2018-04-19 07:27:53,883 - Thread-1   - CoAPWrapper.2 - INFO - PEEE 5
+2018-04-19 07:27:57,735 - Thread-1   - CoAPWrapper.2 - INFO - DEBUGG: RPL: Reset MRHOF
+local monitor cp started - Name: ecoap_local_monitoring_program_cocoa_cc, Id: 1 - STARTED
+2018-04-19 07:28:12,501 - Thread-1   - CoAPWrapper.2 - INFO - DEBUGG: RPL: Reset MRHOF
+2018-04-19 07:28:12,685 - local_control_program - Contiki Base Connector - INFO - Attr coap_rx_success not found
+2018-04-19 07:28:14,741 - local_control_program - Contiki Base Connector - INFO - Attr coap_tx_failed not found
+2018-04-19 07:28:16,797 - local_control_program - Contiki Base Connector - INFO - Attr burst_end_event not found
+2018-04-19 07:28:18,854 - local_control_program - Contiki Base Connector - INFO - Attr burst_start_event not found
+2018-04-19 07:28:20,910 - local_control_program - Contiki Base Connector - INFO - Attr rpl_rank not found
+2018-04-19 07:28:21,926 - local_control_program - Contiki Base Connector - INFO - Attr rpl_rank not found
+2018-04-19 07:28:22,932 - local_control_program - Contiki Base Connector - INFO - Attr coap_rto not found
+2018-04-19 07:28:22,934 - local_control_program - Contiki Base Connector - INFO - Attr burst_end_event not found
+2018-04-19 07:28:22,936 - local_control_program - Contiki Base Connector - INFO - Attr coap_rx_success not found
+2018-04-19 07:28:22,937 - local_control_program - Contiki Base Connector - INFO - Attr coap_tx_success not found
+2018-04-19 07:28:22,938 - local_control_program - Contiki Base Connector - INFO - Attr IEEE802154_measurement_macStats not found
+2018-04-19 07:28:22,940 - local_control_program - Contiki Base Connector - INFO - Attr burst_start_event not found
+2018-04-19 07:28:22,941 - local_control_program - Contiki Base Connector - INFO - Attr capacity not found
+2018-04-19 07:28:22,942 - local_control_program - Contiki Base Connector - INFO - Attr coap_tx_failed not found
+2018-04-19 07:28:23,950 - local_control_program - Contiki Base Connector - INFO - Attr coap_rto not found
+2018-04-19 07:28:23,952 - local_control_program - Contiki Base Connector - INFO - Attr rpl_rank not found
+2018-04-19 07:28:23,953 - local_control_program - Contiki Base Connector - INFO - Attr burst_end_event not found
+2018-04-19 07:28:23,955 - local_control_program - Contiki Base Connector - INFO - Attr coap_rx_success not found
+2018-04-19 07:28:23,956 - local_control_program - Contiki Base Connector - INFO - Attr coap_tx_success not found
+2018-04-19 07:28:23,957 - local_control_program - Contiki Base Connector - INFO - Attr app_stats not found
+2018-04-19 07:28:23,958 - local_control_program - Contiki Base Connector - INFO - Attr burst_start_event not found
+2018-04-19 07:28:23,959 - local_control_program - Contiki Base Connector - INFO - Attr capacity not found
+2018-04-19 07:28:23,961 - local_control_program - Contiki Base Connector - INFO - Attr rpl_preferred_parent not found
+2018-04-19 07:28:23,962 - local_control_program - Contiki Base Connector - INFO - Attr coap_tx_failed not found
+2018-04-19 07:28:23,963 - local_control_program - Contiki Base Connector - INFO - Attr ipv6_stats not found
+2018-04-19 07:28:29,772 - Thread-1   - CoAPWrapper.2 - INFO - UDP client process startup initiated!
+2018-04-19 07:28:29,775 - Thread-1   - CoAPWrapper.2 - INFO - UDP client process started!
+2018-04-19 07:29:41,861 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 280
+2018-04-19 07:32:38,867 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 988
+2018-04-19 07:32:39,116 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 989
+2018-04-19 07:32:39,367 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 990
+2018-04-19 07:32:39,617 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 991
+2018-04-19 07:32:39,867 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 992
+2018-04-19 07:33:05,867 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1096
+2018-04-19 07:33:06,121 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1097
+2018-04-19 07:33:06,367 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1098
+2018-04-19 07:33:06,617 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1099
+2018-04-19 07:33:06,867 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1100
+Traceback (most recent call last):
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/wishful_module_contikibase/net_connector_module.py", line 25, in set_net_parameter
+    return node.set_parameters(param_list, param_key_values_dict)
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/wishful_module_gitar/rpc_node.py", line 203, in set_parameters
+    resp_key_values[param.name] = ControlDataType(self.platform.endianness_fmt, self.platform.get_data_type_format_by_name('INT8')).read_bytes(response_message[line_ptr:])
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/wishful_module_gitar/lib_gitar.py", line 38, in read_bytes
+    tpl = struct.unpack(tmp_fmt, buf)
+struct.error: unpack requires a bytes object of length 1
+Traceback (most recent call last):
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/wishful_module_contikibase/net_connector_module.py", line 56, in get_net_measurements_periodic_worker
+    ret = node.read_measurements(measurement_list)
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/wishful_module_gitar/rpc_node.py", line 274, in read_measurements
+    resp_key_values[measurement.name] = measurement.datatype.read_bytes(response_message[line_ptr:])
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/wishful_module_gitar/lib_gitar.py", line 38, in read_bytes
+    tpl = struct.unpack(tmp_fmt, buf)
+struct.error: unpack requires a bytes object of length 40
+Traceback (most recent call last):
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/wishful_module_contikibase/net_connector_module.py", line 56, in get_net_measurements_periodic_worker
+    ret = node.read_measurements(measurement_list)
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/wishful_module_gitar/rpc_node.py", line 274, in read_measurements
+    resp_key_values[measurement.name] = measurement.datatype.read_bytes(response_message[line_ptr:])
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/wishful_module_gitar/lib_gitar.py", line 38, in read_bytes
+    tpl = struct.unpack(tmp_fmt, buf)
+struct.error: unpack requires a bytes object of length 40
+Traceback (most recent call last):
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/wishful_module_contikibase/net_connector_module.py", line 25, in set_net_parameter
+    return node.set_parameters(param_list, param_key_values_dict)
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/wishful_module_gitar/rpc_node.py", line 203, in set_parameters
+    resp_key_values[param.name] = ControlDataType(self.platform.endianness_fmt, self.platform.get_data_type_format_by_name('INT8')).read_bytes(response_message[line_ptr:])
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/wishful_module_gitar/lib_gitar.py", line 38, in read_bytes
+    tpl = struct.unpack(tmp_fmt, buf)
+struct.error: unpack requires a bytes object of length 1
+Traceback (most recent call last):
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/wishful_module_contikibase/net_connector_module.py", line 25, in set_net_parameter
+    return node.set_parameters(param_list, param_key_values_dict)
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/wishful_module_gitar/rpc_node.py", line 203, in set_parameters
+    resp_key_values[param.name] = ControlDataType(self.platform.endianness_fmt, self.platform.get_data_type_format_by_name('INT8')).read_bytes(response_message[line_ptr:])
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/wishful_module_gitar/lib_gitar.py", line 38, in read_bytes
+    tpl = struct.unpack(tmp_fmt, buf)
+struct.error: unpack requires a bytes object of length 1
+Traceback (most recent call last):
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/wishful_module_contikibase/net_connector_module.py", line 56, in get_net_measurements_periodic_worker
+    ret = node.read_measurements(measurement_list)
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/wishful_module_gitar/rpc_node.py", line 274, in read_measurements
+    resp_key_values[measurement.name] = measurement.datatype.read_bytes(response_message[line_ptr:])
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/wishful_module_gitar/lib_gitar.py", line 38, in read_bytes
+    tpl = struct.unpack(tmp_fmt, buf)
+struct.error: unpack requires a bytes object of length 40
+2018-04-19 07:43:20,887 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 3556
+2018-04-19 07:43:30,888 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 3596
+2018-04-19 07:43:31,138 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 3597
+2018-04-19 07:43:31,406 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 3598
+2018-04-19 07:43:40,890 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 3636
+2018-04-19 07:43:41,138 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 3637
+2018-04-19 07:43:50,887 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 3676
+2018-04-19 07:43:51,137 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 3677
+2018-04-19 07:43:58,888 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 3708
+2018-04-19 07:43:59,137 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 3709
+2018-04-19 07:44:09,887 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 3752
+2018-04-19 07:44:10,137 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 3753
+2018-04-19 07:44:10,396 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 3754
+2018-04-19 07:44:22,895 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 3804
+2018-04-19 07:44:44,895 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 3892
+2018-04-19 07:44:45,145 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 3893
+2018-04-19 07:44:45,395 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 3894
+bash: line 1: 19692 Terminated              python agent.py --config ecoap_external_advanced/ecoap_agent.yaml

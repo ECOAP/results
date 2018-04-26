@@ -1,0 +1,948 @@
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_PAPER = "it_IT.UTF-8",
+	LC_ADDRESS = "it_IT.UTF-8",
+	LC_MONETARY = "it_IT.UTF-8",
+	LC_NUMERIC = "it_IT.UTF-8",
+	LC_TELEPHONE = "it_IT.UTF-8",
+	LC_IDENTIFICATION = "it_IT.UTF-8",
+	LC_MEASUREMENT = "it_IT.UTF-8",
+	LC_TIME = "it_IT.UTF-8",
+	LC_NAME = "it_IT.UTF-8",
+	LANG = "en_GB.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to a fallback locale ("en_GB.UTF-8").
+2018-04-19 06:47:51,944 - MainThread - SensorNodeFactory - INFO - skipping unknown node type
+2018-04-19 06:47:51,946 - MainThread - SensorNodeFactory - INFO - cc2538-bsl.py  -p /dev/ttyUSB1 -a 0x00202000
+Opening port /dev/ttyUSB1, baud 500000 address 0x202000
+Connecting to target...
+CC2538 PG2.0: 512KB Flash, 32KB SRAM, CCFG at 0x0027FFD4
+Primary IEEE Address: 00:12:4B:00:10:03:54:32
+2018-04-19 06:47:52,406 - MainThread - SensorNodeFactory - INFO - b''
+2018-04-19 06:47:52,407 - MainThread - SensorNodeFactory - INFO - Found Zoul on /dev/ttyUSB1
+2018-04-19 06:47:55,006 - MainThread - CoAPWrapper.2 - INFO - sudo ../../agent_modules/contiki/communication_wrappers/bin/tunslip6 -C -B 115200 -s /dev/ttyUSB1 fd00:c:2::1/64
+<wishful_module_gitar.lib_arm_cortex_m.Zoul object at 0x7364faf0>
+2018-04-19 06:47:56,107 - Thread-1   - CoAPWrapper.2 - INFO - ifconfig tun0 inet `hostname` mtu 1500 up
+2018-04-19 06:47:56,131 - Thread-1   - CoAPWrapper.2 - INFO - ifconfig tun0 add fd00:c:2::1/64
+2018-04-19 06:47:56,149 - Thread-1   - CoAPWrapper.2 - INFO - ifconfig tun0 add fe80::c:2:0:1/64
+2018-04-19 06:47:56,160 - Thread-1   - CoAPWrapper.2 - INFO - ifconfig tun0
+2018-04-19 06:47:56,162 - Thread-1   - CoAPWrapper.2 - INFO - 
+2018-04-19 06:47:56,170 - Thread-1   - CoAPWrapper.2 - INFO - tun0      Link encap:UNSPEC  HWaddr 00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00
+2018-04-19 06:47:56,172 - Thread-1   - CoAPWrapper.2 - INFO - inet addr:127.0.0.1  P-t-P:127.0.0.1  Mask:255.255.255.255
+2018-04-19 06:47:56,173 - Thread-1   - CoAPWrapper.2 - INFO - inet6 addr: fe80::c:2:0:1/64 Scope:Link
+2018-04-19 06:47:56,173 - Thread-1   - CoAPWrapper.2 - INFO - inet6 addr: fd00:c:2::1/64 Scope:Global
+2018-04-19 06:47:56,175 - Thread-1   - CoAPWrapper.2 - INFO - UP POINTOPOINT RUNNING NOARP MULTICAST  MTU:1500  Metric:1
+2018-04-19 06:47:56,176 - Thread-1   - CoAPWrapper.2 - INFO - RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+2018-04-19 06:47:56,177 - Thread-1   - CoAPWrapper.2 - INFO - TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+2018-04-19 06:47:56,180 - Thread-1   - CoAPWrapper.2 - INFO - collisions:0 txqueuelen:500
+2018-04-19 06:47:56,182 - Thread-1   - CoAPWrapper.2 - INFO - RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+2018-04-19 06:47:56,183 - Thread-1   - CoAPWrapper.2 - INFO - 
+2018-04-19 06:47:56,731 - Thread-1   - CoAPWrapper.2 - INFO - Got configuration message of type C
+2018-04-19 06:47:56,732 - Thread-1   - CoAPWrapper.2 - INFO - Setting prefix fd00:c:2::
+2018-04-19 06:47:56,733 - Thread-1   - CoAPWrapper.2 - INFO - Removing wishful_control_address: fd00:c::2
+2018-04-19 06:47:56,734 - Thread-1   - CoAPWrapper.2 - INFO - New wishful_control_address: fd00:c:2::2
+2018-04-19 06:47:57,717 - Thread-1   - CoAPWrapper.2 - INFO - Control prefix set and apps started
+<Task pending coro=<coap_event_server() running at /export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/communication_wrappers/coap_wrapper.py:106>>
+2018-04-19 06:48:08,131 - Thread-3   - pyre_discovery_module.main - INFO - Discovered Controller DL-tcp://10.1.1.1:8990, UL-tcp://10.1.1.1:8989
+2018-04-19 06:48:10,130 - Thread-3   - pyre_discovery_module.main - INFO - Discovered Controller DL-tcp://10.1.1.1:8990, UL-tcp://10.1.1.1:8989
+2018-04-19 06:48:34,835 - Thread-1   - CoAPWrapper.2 - INFO - PEEE 5
+2018-04-19 06:49:00,531 - Thread-1   - CoAPWrapper.2 - INFO - DEBUGG: RPL: Reset MRHOF
+local monitor cp started - Name: ecoap_local_monitoring_program_rpl_cc, Id: 1 - STARTED
+2018-04-19 06:49:16,598 - local_control_program - Contiki Base Connector - INFO - Attr coap_rx_success not found
+2018-04-19 06:49:16,703 - Thread-1   - CoAPWrapper.2 - INFO - DEBUGG: RPL: Reset MRHOF
+2018-04-19 06:49:18,655 - local_control_program - Contiki Base Connector - INFO - Attr coap_tx_failed not found
+2018-04-19 06:49:20,718 - local_control_program - Contiki Base Connector - INFO - Attr burst_end_event not found
+2018-04-19 06:49:22,775 - local_control_program - Contiki Base Connector - INFO - Attr burst_start_event not found
+2018-04-19 06:49:24,829 - local_control_program - Contiki Base Connector - INFO - Attr rpl_rank not found
+2018-04-19 06:49:25,836 - local_control_program - Contiki Base Connector - INFO - Attr rpl_rank not found
+2018-04-19 06:49:26,843 - local_control_program - Contiki Base Connector - INFO - Attr burst_end_event not found
+2018-04-19 06:49:26,845 - local_control_program - Contiki Base Connector - INFO - Attr burst_start_event not found
+2018-04-19 06:49:26,846 - local_control_program - Contiki Base Connector - INFO - Attr coap_rto not found
+2018-04-19 06:49:26,848 - local_control_program - Contiki Base Connector - INFO - Attr capacity not found
+2018-04-19 06:49:26,849 - local_control_program - Contiki Base Connector - INFO - Attr coap_tx_failed not found
+2018-04-19 06:49:26,850 - local_control_program - Contiki Base Connector - INFO - Attr IEEE802154_measurement_macStats not found
+2018-04-19 06:49:26,851 - local_control_program - Contiki Base Connector - INFO - Attr coap_rx_success not found
+2018-04-19 06:49:26,853 - local_control_program - Contiki Base Connector - INFO - Attr coap_tx_success not found
+2018-04-19 06:49:27,860 - local_control_program - Contiki Base Connector - INFO - Attr burst_end_event not found
+2018-04-19 06:49:27,862 - local_control_program - Contiki Base Connector - INFO - Attr burst_start_event not found
+2018-04-19 06:49:27,863 - local_control_program - Contiki Base Connector - INFO - Attr app_stats not found
+2018-04-19 06:49:27,865 - local_control_program - Contiki Base Connector - INFO - Attr coap_rto not found
+2018-04-19 06:49:27,866 - local_control_program - Contiki Base Connector - INFO - Attr capacity not found
+2018-04-19 06:49:27,867 - local_control_program - Contiki Base Connector - INFO - Attr coap_tx_failed not found
+2018-04-19 06:49:27,869 - local_control_program - Contiki Base Connector - INFO - Attr coap_rx_success not found
+2018-04-19 06:49:27,870 - local_control_program - Contiki Base Connector - INFO - Attr rpl_preferred_parent not found
+2018-04-19 06:49:27,871 - local_control_program - Contiki Base Connector - INFO - Attr rpl_rank not found
+2018-04-19 06:49:27,872 - local_control_program - Contiki Base Connector - INFO - Attr ipv6_stats not found
+2018-04-19 06:49:27,873 - local_control_program - Contiki Base Connector - INFO - Attr coap_tx_success not found
+2018-04-19 06:49:33,263 - Thread-1   - CoAPWrapper.2 - INFO - UDP client process startup initiated!
+2018-04-19 06:49:33,267 - Thread-1   - CoAPWrapper.2 - INFO - UDP client process started!
+Traceback (most recent call last):
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/wishful_module_contikibase/net_connector_module.py", line 25, in set_net_parameter
+    return node.set_parameters(param_list, param_key_values_dict)
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/wishful_module_gitar/rpc_node.py", line 203, in set_parameters
+    resp_key_values[param.name] = ControlDataType(self.platform.endianness_fmt, self.platform.get_data_type_format_by_name('INT8')).read_bytes(response_message[line_ptr:])
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/wishful_module_gitar/lib_gitar.py", line 38, in read_bytes
+    tpl = struct.unpack(tmp_fmt, buf)
+struct.error: unpack requires a bytes object of length 1
+2018-04-19 06:50:01,349 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 14
+2018-04-19 06:50:01,599 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 15
+2018-04-19 06:50:01,848 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 16
+2018-04-19 06:50:02,098 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 17
+2018-04-19 06:50:02,348 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 18
+2018-04-19 06:50:02,598 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 19
+2018-04-19 06:50:02,849 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 20
+2018-04-19 06:50:04,849 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 28
+2018-04-19 06:50:05,099 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 29
+2018-04-19 06:50:05,348 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 30
+2018-04-19 06:50:05,598 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 31
+2018-04-19 06:50:05,848 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 32
+2018-04-19 06:50:06,098 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 33
+2018-04-19 06:50:06,848 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 36
+2018-04-19 06:50:07,098 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 37
+2018-04-19 06:50:07,349 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 38
+2018-04-19 06:50:07,599 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 39
+2018-04-19 06:50:07,849 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 40
+2018-04-19 06:50:08,098 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 41
+2018-04-19 06:50:08,348 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 42
+2018-04-19 06:50:08,598 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 43
+2018-04-19 06:50:08,848 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 44
+2018-04-19 06:50:09,098 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 45
+2018-04-19 06:50:09,349 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 46
+2018-04-19 06:50:09,599 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 47
+2018-04-19 06:50:09,849 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 48
+2018-04-19 06:50:10,098 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 49
+2018-04-19 06:50:10,348 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 50
+2018-04-19 06:50:10,598 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 51
+2018-04-19 06:50:10,848 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 52
+2018-04-19 06:50:11,098 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 53
+2018-04-19 06:50:11,349 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 54
+2018-04-19 06:50:11,599 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 55
+2018-04-19 06:50:11,849 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 56
+2018-04-19 06:50:12,098 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 57
+2018-04-19 06:50:12,369 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 58
+2018-04-19 06:50:12,849 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 60
+2018-04-19 06:50:13,098 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 61
+2018-04-19 06:50:13,348 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 62
+2018-04-19 06:50:13,598 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 63
+2018-04-19 06:50:13,848 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 64
+2018-04-19 06:50:14,098 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 65
+2018-04-19 06:50:14,349 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 66
+2018-04-19 06:50:14,599 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 67
+2018-04-19 06:50:14,849 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 68
+2018-04-19 06:50:15,098 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 69
+2018-04-19 06:50:15,348 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 70
+2018-04-19 06:50:15,598 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 71
+2018-04-19 06:50:15,848 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 72
+2018-04-19 06:50:16,098 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 73
+2018-04-19 06:50:16,348 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 74
+2018-04-19 06:50:16,599 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 75
+2018-04-19 06:50:16,849 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 76
+2018-04-19 06:50:17,098 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 77
+2018-04-19 06:50:17,348 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 78
+2018-04-19 06:50:17,598 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 79
+2018-04-19 06:50:17,848 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 80
+2018-04-19 06:50:18,098 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 81
+2018-04-19 06:50:18,349 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 82
+2018-04-19 06:50:18,599 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 83
+2018-04-19 06:50:18,849 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 84
+2018-04-19 06:50:20,848 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 92
+2018-04-19 06:50:21,098 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 93
+2018-04-19 06:50:21,353 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 94
+2018-04-19 06:50:21,602 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 95
+2018-04-19 06:50:21,852 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 96
+2018-04-19 06:50:22,098 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 97
+2018-04-19 06:50:22,349 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 98
+2018-04-19 06:50:22,599 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 99
+2018-04-19 06:50:22,848 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 100
+2018-04-19 06:50:23,098 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 101
+2018-04-19 06:50:23,348 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 102
+2018-04-19 06:50:23,598 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 103
+2018-04-19 06:50:23,848 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 104
+2018-04-19 06:50:24,099 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 105
+2018-04-19 06:50:24,349 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 106
+2018-04-19 06:50:24,599 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 107
+2018-04-19 06:50:24,848 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 108
+2018-04-19 06:50:25,098 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 109
+2018-04-19 06:50:25,348 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 110
+2018-04-19 06:50:25,598 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 111
+2018-04-19 06:50:25,848 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 112
+2018-04-19 06:50:26,099 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 113
+2018-04-19 06:50:26,349 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 114
+2018-04-19 06:50:26,599 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 115
+2018-04-19 06:50:26,848 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 116
+2018-04-19 06:50:27,352 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 118
+2018-04-19 06:50:27,599 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 119
+2018-04-19 06:50:27,848 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 120
+2018-04-19 06:50:28,098 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 121
+2018-04-19 06:50:28,353 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 122
+2018-04-19 06:50:28,601 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 123
+2018-04-19 06:50:28,849 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 124
+2018-04-19 06:50:29,098 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 125
+2018-04-19 06:50:29,348 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 126
+2018-04-19 06:50:29,598 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 127
+2018-04-19 06:50:29,860 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 128
+2018-04-19 06:50:30,849 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 132
+2018-04-19 06:50:31,098 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 133
+2018-04-19 06:50:31,348 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 134
+2018-04-19 06:50:31,598 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 135
+2018-04-19 06:50:31,848 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 136
+2018-04-19 06:50:33,098 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 141
+2018-04-19 06:50:33,348 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 142
+2018-04-19 06:50:33,598 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 143
+2018-04-19 06:50:33,848 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 144
+2018-04-19 06:50:34,099 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 145
+2018-04-19 06:50:34,349 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 146
+2018-04-19 06:50:34,599 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 147
+2018-04-19 06:50:34,848 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 148
+2018-04-19 06:50:35,098 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 149
+2018-04-19 06:50:35,348 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 150
+2018-04-19 06:50:35,598 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 151
+2018-04-19 06:50:35,848 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 152
+2018-04-19 06:50:36,101 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 153
+2018-04-19 06:50:36,350 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 154
+2018-04-19 06:50:36,599 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 155
+2018-04-19 06:50:36,848 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 156
+2018-04-19 06:50:37,098 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 157
+2018-04-19 06:50:37,348 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 158
+2018-04-19 06:50:37,598 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 159
+2018-04-19 06:50:37,849 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 160
+2018-04-19 06:50:38,099 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 161
+2018-04-19 06:50:38,351 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 162
+2018-04-19 06:50:38,598 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 163
+2018-04-19 06:50:41,351 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 174
+2018-04-19 06:50:41,598 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 175
+2018-04-19 06:50:41,848 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 176
+2018-04-19 06:50:42,099 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 177
+2018-04-19 06:50:42,349 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 178
+2018-04-19 06:50:49,098 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 205
+2018-04-19 06:50:49,348 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 206
+2018-04-19 06:50:49,598 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 207
+2018-04-19 06:50:49,848 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 208
+2018-04-19 06:50:50,099 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 209
+2018-04-19 06:50:50,349 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 210
+2018-04-19 06:50:50,599 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 211
+2018-04-19 06:50:50,848 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 212
+2018-04-19 06:50:51,098 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 213
+2018-04-19 06:50:51,348 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 214
+2018-04-19 06:50:51,598 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 215
+2018-04-19 06:50:51,848 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 216
+2018-04-19 06:50:52,099 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 217
+2018-04-19 06:50:52,349 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 218
+2018-04-19 06:50:52,598 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 219
+2018-04-19 06:50:52,848 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 220
+2018-04-19 06:50:53,098 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 221
+2018-04-19 06:50:53,348 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 222
+2018-04-19 06:50:53,598 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 223
+2018-04-19 06:50:53,848 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 224
+2018-04-19 06:50:54,099 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 225
+2018-04-19 06:50:54,349 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 226
+2018-04-19 06:50:54,598 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 227
+2018-04-19 06:50:54,848 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 228
+2018-04-19 06:50:55,098 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 229
+Traceback (most recent call last):
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/wishful_module_contikibase/net_connector_module.py", line 56, in get_net_measurements_periodic_worker
+    ret = node.read_measurements(measurement_list)
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/wishful_module_gitar/rpc_node.py", line 274, in read_measurements
+    resp_key_values[measurement.name] = measurement.datatype.read_bytes(response_message[line_ptr:])
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/wishful_module_gitar/lib_gitar.py", line 38, in read_bytes
+    tpl = struct.unpack(tmp_fmt, buf)
+struct.error: unpack requires a bytes object of length 2
+2018-04-19 06:51:16,599 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 315
+2018-04-19 06:51:16,848 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 316
+2018-04-19 06:51:17,098 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 317
+2018-04-19 06:51:17,348 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 318
+2018-04-19 06:51:17,598 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 319
+2018-04-19 06:51:26,856 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 356
+2018-04-19 06:51:27,106 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 357
+2018-04-19 06:51:27,355 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 358
+2018-04-19 06:51:27,605 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 359
+2018-04-19 06:51:27,856 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 360
+2018-04-19 06:51:28,106 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 361
+2018-04-19 06:51:28,355 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 362
+2018-04-19 06:51:29,606 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 367
+2018-04-19 06:51:29,855 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 368
+2018-04-19 06:51:30,105 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 369
+2018-04-19 06:51:30,356 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 370
+2018-04-19 06:51:30,606 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 371
+2018-04-19 06:51:30,856 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 372
+2018-04-19 06:51:43,856 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 424
+2018-04-19 06:51:44,106 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 425
+2018-04-19 06:51:44,356 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 426
+2018-04-19 06:51:44,606 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 427
+2018-04-19 06:51:44,855 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 428
+2018-04-19 06:51:45,105 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 429
+2018-04-19 06:51:47,105 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 437
+2018-04-19 06:51:47,355 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 438
+2018-04-19 06:51:47,606 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 439
+2018-04-19 06:51:47,856 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 440
+2018-04-19 06:51:48,106 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 441
+2018-04-19 06:51:56,356 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 474
+2018-04-19 06:51:56,606 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 475
+2018-04-19 06:51:56,856 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 476
+2018-04-19 06:51:57,106 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 477
+2018-04-19 06:51:57,355 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 478
+2018-04-19 06:51:57,605 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 479
+2018-04-19 06:51:57,872 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 480
+2018-04-19 06:52:01,363 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 494
+2018-04-19 06:52:01,613 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 495
+2018-04-19 06:52:01,863 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 496
+2018-04-19 06:52:02,114 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 497
+2018-04-19 06:52:02,364 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 498
+2018-04-19 06:52:02,614 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 499
+2018-04-19 06:52:02,864 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 500
+2018-04-19 06:52:03,113 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 501
+2018-04-19 06:52:05,880 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 512
+2018-04-19 06:52:06,129 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 513
+2018-04-19 06:52:06,385 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 514
+2018-04-19 06:52:06,639 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 515
+2018-04-19 06:52:06,886 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 516
+2018-04-19 06:52:07,137 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 517
+2018-04-19 06:52:07,887 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 520
+2018-04-19 06:52:08,142 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 521
+2018-04-19 06:52:08,387 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 522
+2018-04-19 06:52:08,637 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 523
+2018-04-19 06:52:08,887 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 524
+2018-04-19 06:52:09,136 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 525
+2018-04-19 06:52:09,387 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 526
+2018-04-19 06:52:09,637 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 527
+2018-04-19 06:52:09,887 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 528
+2018-04-19 06:52:11,145 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 533
+2018-04-19 06:52:11,387 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 534
+2018-04-19 06:52:11,637 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 535
+2018-04-19 06:52:11,887 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 536
+2018-04-19 06:52:12,137 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 537
+2018-04-19 06:52:12,386 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 538
+2018-04-19 06:52:12,636 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 539
+2018-04-19 06:52:18,387 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 562
+2018-04-19 06:52:18,637 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 563
+2018-04-19 06:52:18,887 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 564
+2018-04-19 06:52:19,136 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 565
+2018-04-19 06:52:19,387 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 566
+2018-04-19 06:52:19,637 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 567
+2018-04-19 06:52:21,386 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 574
+2018-04-19 06:52:21,636 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 575
+2018-04-19 06:52:21,886 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 576
+2018-04-19 06:52:22,137 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 577
+2018-04-19 06:52:22,387 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 578
+2018-04-19 06:52:29,636 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 607
+2018-04-19 06:52:29,886 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 608
+2018-04-19 06:52:30,137 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 609
+2018-04-19 06:52:30,387 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 610
+2018-04-19 06:52:30,637 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 611
+2018-04-19 06:52:30,887 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 612
+2018-04-19 06:52:31,137 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 613
+2018-04-19 06:52:31,387 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 614
+2018-04-19 06:52:33,887 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 624
+2018-04-19 06:52:34,136 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 625
+2018-04-19 06:52:34,386 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 626
+2018-04-19 06:52:34,637 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 627
+2018-04-19 06:52:34,887 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 628
+2018-04-19 06:52:35,137 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 629
+2018-04-19 06:52:35,387 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 630
+2018-04-19 06:52:35,637 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 631
+2018-04-19 06:52:35,887 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 632
+2018-04-19 06:52:36,136 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 633
+2018-04-19 06:52:36,387 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 634
+2018-04-19 06:52:36,637 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 635
+2018-04-19 06:52:36,887 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 636
+2018-04-19 06:52:37,137 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 637
+2018-04-19 06:52:37,387 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 638
+2018-04-19 06:52:37,637 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 639
+2018-04-19 06:52:37,887 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 640
+2018-04-19 06:52:38,136 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 641
+2018-04-19 06:52:38,387 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 642
+2018-04-19 06:52:38,637 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 643
+2018-04-19 06:52:38,887 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 644
+2018-04-19 06:52:39,137 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 645
+2018-04-19 06:52:40,637 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 651
+2018-04-19 06:52:40,886 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 652
+2018-04-19 06:52:41,136 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 653
+2018-04-19 06:52:41,387 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 654
+2018-04-19 06:52:41,637 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 655
+2018-04-19 06:52:41,887 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 656
+2018-04-19 06:52:44,887 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 668
+2018-04-19 06:52:45,137 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 669
+2018-04-19 06:52:45,387 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 670
+2018-04-19 06:52:45,637 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 671
+2018-04-19 06:52:45,887 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 672
+2018-04-19 06:52:46,136 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 673
+2018-04-19 06:52:46,386 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 674
+2018-04-19 06:52:46,636 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 675
+2018-04-19 06:52:48,392 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 682
+2018-04-19 06:52:48,636 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 683
+2018-04-19 06:52:48,886 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 684
+2018-04-19 06:52:49,137 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 685
+2018-04-19 06:52:49,387 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 686
+2018-04-19 06:52:51,136 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 693
+2018-04-19 06:52:51,386 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 694
+2018-04-19 06:52:51,637 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 695
+2018-04-19 06:52:51,887 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 696
+2018-04-19 06:52:52,137 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 697
+2018-04-19 06:52:52,387 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 698
+2018-04-19 06:52:52,637 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 699
+2018-04-19 06:52:52,886 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 700
+2018-04-19 06:52:53,645 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 703
+2018-04-19 06:52:53,895 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 704
+2018-04-19 06:52:54,144 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 705
+2018-04-19 06:52:54,394 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 706
+2018-04-19 06:52:54,644 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 707
+2018-04-19 06:52:54,894 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 708
+2018-04-19 06:52:55,145 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 709
+2018-04-19 06:52:55,395 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 710
+2018-04-19 06:52:55,645 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 711
+2018-04-19 06:52:55,904 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 712
+2018-04-19 06:52:58,396 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 722
+2018-04-19 06:52:58,645 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 723
+2018-04-19 06:52:58,895 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 724
+2018-04-19 06:52:59,145 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 725
+2018-04-19 06:52:59,394 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 726
+2018-04-19 06:52:59,644 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 727
+2018-04-19 06:53:00,394 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 730
+2018-04-19 06:53:00,644 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 731
+2018-04-19 06:53:00,894 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 732
+2018-04-19 06:53:01,144 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 733
+2018-04-19 06:53:01,395 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 734
+2018-04-19 06:53:01,645 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 735
+2018-04-19 06:53:01,895 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 736
+2018-04-19 06:53:02,144 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 737
+2018-04-19 06:53:02,394 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 738
+2018-04-19 06:53:02,644 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 739
+2018-04-19 06:53:02,894 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 740
+2018-04-19 06:53:03,144 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 741
+2018-04-19 06:53:03,395 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 742
+2018-04-19 06:53:03,645 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 743
+2018-04-19 06:53:03,894 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 744
+2018-04-19 06:53:04,144 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 745
+2018-04-19 06:53:04,394 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 746
+2018-04-19 06:53:04,644 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 747
+2018-04-19 06:53:04,895 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 748
+2018-04-19 06:53:05,145 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 749
+2018-04-19 06:53:05,395 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 750
+2018-04-19 06:53:05,645 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 751
+2018-04-19 06:53:05,894 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 752
+2018-04-19 06:53:06,148 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 753
+2018-04-19 06:53:06,394 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 754
+2018-04-19 06:53:06,644 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 755
+2018-04-19 06:53:06,895 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 756
+2018-04-19 06:53:07,145 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 757
+2018-04-19 06:53:07,397 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 758
+2018-04-19 06:53:07,645 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 759
+2018-04-19 06:53:07,894 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 760
+2018-04-19 06:53:08,144 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 761
+2018-04-19 06:53:08,395 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 762
+2018-04-19 06:53:08,645 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 763
+2018-04-19 06:53:08,895 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 764
+2018-04-19 06:53:09,145 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 765
+2018-04-19 06:53:09,395 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 766
+2018-04-19 06:53:09,645 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 767
+2018-04-19 06:53:09,894 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 768
+2018-04-19 06:53:10,644 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 771
+2018-04-19 06:53:10,894 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 772
+2018-04-19 06:53:11,144 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 773
+2018-04-19 06:53:11,394 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 774
+2018-04-19 06:53:11,644 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 775
+2018-04-19 06:53:11,894 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 776
+2018-04-19 06:53:12,145 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 777
+2018-04-19 06:53:12,395 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 778
+2018-04-19 06:53:12,644 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 779
+2018-04-19 06:53:12,894 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 780
+2018-04-19 06:53:13,144 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 781
+2018-04-19 06:53:13,394 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 782
+2018-04-19 06:53:13,645 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 783
+2018-04-19 06:53:13,895 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 784
+2018-04-19 06:53:14,145 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 785
+2018-04-19 06:53:14,395 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 786
+2018-04-19 06:53:14,644 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 787
+2018-04-19 06:53:14,894 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 788
+2018-04-19 06:53:15,144 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 789
+2018-04-19 06:53:15,394 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 790
+2018-04-19 06:53:15,645 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 791
+2018-04-19 06:53:15,895 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 792
+2018-04-19 06:53:16,149 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 793
+2018-04-19 06:53:19,645 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 807
+2018-04-19 06:53:19,895 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 808
+2018-04-19 06:53:20,145 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 809
+2018-04-19 06:53:20,395 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 810
+2018-04-19 06:53:20,644 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 811
+2018-04-19 06:53:20,894 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 812
+2018-04-19 06:53:21,144 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 813
+2018-04-19 06:53:22,394 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 818
+2018-04-19 06:53:22,644 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 819
+2018-04-19 06:53:22,894 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 820
+2018-04-19 06:53:23,144 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 821
+2018-04-19 06:53:23,395 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 822
+2018-04-19 06:53:23,651 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 823
+2018-04-19 06:53:25,394 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 830
+2018-04-19 06:53:25,644 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 831
+2018-04-19 06:53:25,895 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 832
+2018-04-19 06:53:26,145 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 833
+2018-04-19 06:53:26,394 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 834
+2018-04-19 06:53:26,644 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 835
+2018-04-19 06:53:26,894 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 836
+2018-04-19 06:53:27,644 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 839
+2018-04-19 06:53:27,894 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 840
+2018-04-19 06:53:28,144 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 841
+2018-04-19 06:53:28,396 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 842
+2018-04-19 06:53:28,644 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 843
+2018-04-19 06:53:28,894 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 844
+2018-04-19 06:53:29,147 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 845
+2018-04-19 06:53:29,394 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 846
+2018-04-19 06:53:29,644 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 847
+2018-04-19 06:53:29,895 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 848
+2018-04-19 06:53:33,394 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 862
+2018-04-19 06:53:33,644 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 863
+2018-04-19 06:53:33,895 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 864
+2018-04-19 06:53:34,145 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 865
+2018-04-19 06:53:34,394 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 866
+2018-04-19 06:53:34,644 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 867
+2018-04-19 06:53:34,894 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 868
+2018-04-19 06:53:35,145 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 869
+2018-04-19 06:53:35,395 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 870
+2018-04-19 06:53:35,645 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 871
+2018-04-19 06:53:35,894 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 872
+2018-04-19 06:53:36,144 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 873
+2018-04-19 06:53:36,394 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 874
+2018-04-19 06:53:36,644 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 875
+2018-04-19 06:53:36,894 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 876
+2018-04-19 06:53:37,145 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 877
+2018-04-19 06:53:37,395 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 878
+2018-04-19 06:53:37,645 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 879
+2018-04-19 06:53:37,894 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 880
+2018-04-19 06:53:38,144 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 881
+2018-04-19 06:53:38,394 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 882
+2018-04-19 06:53:38,644 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 883
+2018-04-19 06:53:41,644 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 895
+2018-04-19 06:53:41,894 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 896
+2018-04-19 06:53:42,144 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 897
+2018-04-19 06:53:42,394 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 898
+2018-04-19 06:53:42,644 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 899
+2018-04-19 06:53:42,895 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 900
+2018-04-19 06:53:43,144 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 901
+2018-04-19 06:53:43,394 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 902
+2018-04-19 06:53:44,894 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 908
+2018-04-19 06:53:45,144 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 909
+2018-04-19 06:53:45,395 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 910
+2018-04-19 06:53:45,645 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 911
+2018-04-19 06:53:45,897 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 912
+2018-04-19 06:53:54,645 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 947
+2018-04-19 06:53:54,895 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 948
+2018-04-19 06:53:55,145 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 949
+2018-04-19 06:53:55,394 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 950
+2018-04-19 06:53:55,644 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 951
+2018-04-19 06:53:55,894 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 952
+2018-04-19 06:53:56,144 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 953
+2018-04-19 06:53:59,144 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 965
+2018-04-19 06:53:59,395 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 966
+2018-04-19 06:53:59,645 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 967
+2018-04-19 06:53:59,894 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 968
+2018-04-19 06:54:00,144 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 969
+2018-04-19 06:54:00,394 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 970
+2018-04-19 06:54:00,895 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 972
+2018-04-19 06:54:01,144 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 973
+2018-04-19 06:54:01,394 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 974
+2018-04-19 06:54:01,644 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 975
+2018-04-19 06:54:01,894 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 976
+2018-04-19 06:54:02,144 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 977
+2018-04-19 06:54:02,394 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 978
+2018-04-19 06:54:02,644 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 979
+2018-04-19 06:54:02,895 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 980
+2018-04-19 06:54:15,644 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1031
+2018-04-19 06:54:15,894 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1032
+2018-04-19 06:54:16,145 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1033
+2018-04-19 06:54:16,394 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1034
+2018-04-19 06:54:16,644 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1035
+2018-04-19 06:54:16,895 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1036
+2018-04-19 06:54:26,644 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1075
+2018-04-19 06:54:26,894 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1076
+2018-04-19 06:54:27,144 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1077
+2018-04-19 06:54:27,395 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1078
+2018-04-19 06:54:27,645 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1079
+2018-04-19 06:54:27,894 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1080
+2018-04-19 06:54:28,144 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1081
+2018-04-19 06:54:28,394 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1082
+2018-04-19 06:54:38,144 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1121
+2018-04-19 06:54:38,394 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1122
+2018-04-19 06:54:38,644 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1123
+2018-04-19 06:54:38,894 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1124
+2018-04-19 06:54:39,144 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1125
+2018-04-19 06:54:39,395 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1126
+2018-04-19 06:54:41,653 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1135
+2018-04-19 06:54:41,901 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1136
+2018-04-19 06:54:42,152 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1137
+2018-04-19 06:54:42,402 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1138
+2018-04-19 06:54:42,657 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1139
+2018-04-19 06:54:42,902 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1140
+2018-04-19 06:54:57,659 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1199
+2018-04-19 06:54:57,910 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1200
+2018-04-19 06:54:58,160 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1201
+2018-04-19 06:54:58,417 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1202
+2018-04-19 06:54:58,668 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1203
+2018-04-19 06:54:58,917 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1204
+2018-04-19 06:54:59,173 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1205
+2018-04-19 06:54:59,419 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1206
+2018-04-19 06:54:59,668 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1207
+2018-04-19 06:54:59,918 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1208
+2018-04-19 06:55:00,167 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1209
+2018-04-19 06:55:00,417 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1210
+2018-04-19 06:55:00,667 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1211
+2018-04-19 06:55:00,917 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1212
+2018-04-19 06:55:01,167 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1213
+2018-04-19 06:55:01,418 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1214
+2018-04-19 06:55:01,668 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1215
+2018-04-19 06:55:01,917 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1216
+2018-04-19 06:55:03,168 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1221
+2018-04-19 06:55:03,418 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1222
+2018-04-19 06:55:03,667 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1223
+2018-04-19 06:55:03,917 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1224
+2018-04-19 06:55:04,167 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1225
+2018-04-19 06:55:05,917 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1232
+2018-04-19 06:55:06,167 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1233
+2018-04-19 06:55:06,417 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1234
+2018-04-19 06:55:06,667 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1235
+2018-04-19 06:55:06,917 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1236
+2018-04-19 06:55:07,167 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1237
+2018-04-19 06:55:08,419 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1242
+2018-04-19 06:55:08,674 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1243
+2018-04-19 06:55:08,925 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1244
+2018-04-19 06:55:09,175 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1245
+2018-04-19 06:55:09,426 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1246
+2018-04-19 06:55:11,675 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1255
+2018-04-19 06:55:11,925 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1256
+2018-04-19 06:55:12,175 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1257
+2018-04-19 06:55:12,425 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1258
+2018-04-19 06:55:12,675 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1259
+2018-04-19 06:55:13,175 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1261
+2018-04-19 06:55:13,425 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1262
+2018-04-19 06:55:13,675 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1263
+2018-04-19 06:55:13,926 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1264
+2018-04-19 06:55:14,176 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1265
+2018-04-19 06:55:14,425 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1266
+2018-04-19 06:55:14,675 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1267
+2018-04-19 06:55:14,925 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1268
+2018-04-19 06:55:15,925 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1272
+2018-04-19 06:55:16,175 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1273
+2018-04-19 06:55:16,426 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1274
+2018-04-19 06:55:16,675 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1275
+2018-04-19 06:55:16,925 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1276
+2018-04-19 06:55:17,175 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1277
+2018-04-19 06:55:24,676 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1307
+2018-04-19 06:55:24,924 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1308
+2018-04-19 06:55:25,175 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1309
+2018-04-19 06:55:25,425 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1310
+2018-04-19 06:55:25,675 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1311
+2018-04-19 06:55:25,929 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1312
+Traceback (most recent call last):
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/wishful_module_contikibase/net_connector_module.py", line 25, in set_net_parameter
+    return node.set_parameters(param_list, param_key_values_dict)
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/wishful_module_gitar/rpc_node.py", line 203, in set_parameters
+    resp_key_values[param.name] = ControlDataType(self.platform.endianness_fmt, self.platform.get_data_type_format_by_name('INT8')).read_bytes(response_message[line_ptr:])
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/wishful_module_gitar/lib_gitar.py", line 38, in read_bytes
+    tpl = struct.unpack(tmp_fmt, buf)
+struct.error: unpack requires a bytes object of length 1
+2018-04-19 06:55:34,426 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1346
+2018-04-19 06:55:34,675 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1347
+2018-04-19 06:55:34,925 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1348
+2018-04-19 06:55:35,175 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1349
+2018-04-19 06:55:35,425 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1350
+2018-04-19 06:55:35,675 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1351
+2018-04-19 06:55:35,925 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1352
+2018-04-19 06:55:36,176 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1353
+2018-04-19 06:55:37,925 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1360
+2018-04-19 06:55:38,175 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1361
+2018-04-19 06:55:38,425 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1362
+2018-04-19 06:55:38,676 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1363
+2018-04-19 06:55:38,925 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1364
+2018-04-19 06:55:39,175 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1365
+2018-04-19 06:55:39,425 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1366
+2018-04-19 06:55:40,175 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1369
+2018-04-19 06:55:40,425 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1370
+2018-04-19 06:55:40,675 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1371
+2018-04-19 06:55:40,925 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1372
+2018-04-19 06:55:41,175 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1373
+2018-04-19 06:55:41,425 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1374
+2018-04-19 06:55:41,674 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1375
+2018-04-19 06:55:41,925 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1376
+2018-04-19 06:55:42,180 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1377
+2018-04-19 06:55:42,434 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1378
+2018-04-19 06:55:47,925 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1400
+2018-04-19 06:55:48,175 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1401
+2018-04-19 06:55:48,425 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1402
+2018-04-19 06:55:48,676 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1403
+2018-04-19 06:55:48,925 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1404
+2018-04-19 06:55:49,175 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1405
+2018-04-19 06:55:49,425 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1406
+2018-04-19 06:55:49,675 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1407
+2018-04-19 06:55:49,925 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1408
+2018-04-19 06:55:50,175 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1409
+2018-04-19 06:55:50,425 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1410
+2018-04-19 06:55:50,676 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1411
+2018-04-19 06:55:50,925 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1412
+2018-04-19 06:55:51,175 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1413
+2018-04-19 06:55:51,425 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1414
+2018-04-19 06:55:51,675 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1415
+2018-04-19 06:55:51,925 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1416
+2018-04-19 06:55:52,178 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1417
+2018-04-19 06:55:52,425 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1418
+2018-04-19 06:55:52,676 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1419
+2018-04-19 06:55:52,927 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1420
+2018-04-19 06:55:53,175 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1421
+Traceback (most recent call last):
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/wishful_module_contikibase/net_connector_module.py", line 25, in set_net_parameter
+    return node.set_parameters(param_list, param_key_values_dict)
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/wishful_module_gitar/rpc_node.py", line 203, in set_parameters
+    resp_key_values[param.name] = ControlDataType(self.platform.endianness_fmt, self.platform.get_data_type_format_by_name('INT8')).read_bytes(response_message[line_ptr:])
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/wishful_module_gitar/lib_gitar.py", line 38, in read_bytes
+    tpl = struct.unpack(tmp_fmt, buf)
+struct.error: unpack requires a bytes object of length 1
+2018-04-19 06:56:17,925 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1520
+2018-04-19 06:56:18,175 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1521
+2018-04-19 06:56:18,424 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1522
+2018-04-19 06:56:18,674 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1523
+2018-04-19 06:56:18,925 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1524
+2018-04-19 06:56:19,175 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1525
+2018-04-19 06:56:19,427 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1526
+2018-04-19 06:56:19,675 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1527
+2018-04-19 06:56:19,925 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1528
+2018-04-19 06:56:20,175 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1529
+2018-04-19 06:56:20,424 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1530
+2018-04-19 06:56:20,675 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1531
+2018-04-19 06:56:20,925 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1532
+2018-04-19 06:56:21,175 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1533
+2018-04-19 06:56:21,425 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1534
+2018-04-19 06:56:21,675 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1535
+2018-04-19 06:56:21,925 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1536
+2018-04-19 06:56:22,175 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1537
+2018-04-19 06:56:24,675 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1547
+2018-04-19 06:56:24,924 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1548
+2018-04-19 06:56:25,174 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1549
+2018-04-19 06:56:25,424 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1550
+2018-04-19 06:56:25,675 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1551
+2018-04-19 06:56:28,425 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1562
+2018-04-19 06:56:28,675 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1563
+2018-04-19 06:56:28,924 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1564
+2018-04-19 06:56:29,175 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1565
+2018-04-19 06:56:29,425 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1566
+2018-04-19 06:56:43,683 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1623
+2018-04-19 06:56:43,933 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1624
+2018-04-19 06:56:44,183 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1625
+2018-04-19 06:56:44,432 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1626
+2018-04-19 06:56:44,682 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1627
+2018-04-19 06:56:50,691 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1651
+2018-04-19 06:56:50,940 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1652
+2018-04-19 06:56:51,190 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1653
+2018-04-19 06:56:51,440 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1654
+2018-04-19 06:56:51,690 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1655
+2018-04-19 06:56:51,940 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1656
+2018-04-19 06:56:57,441 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1678
+2018-04-19 06:56:57,691 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1679
+2018-04-19 06:56:57,941 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1680
+2018-04-19 06:56:58,190 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1681
+2018-04-19 06:56:58,440 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1682
+2018-04-19 06:56:58,690 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1683
+2018-04-19 06:56:58,940 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1684
+2018-04-19 06:56:59,202 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1685
+2018-04-19 06:57:21,190 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1773
+2018-04-19 06:57:21,440 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1774
+2018-04-19 06:57:21,690 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1775
+2018-04-19 06:57:21,940 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1776
+2018-04-19 06:57:22,191 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1777
+2018-04-19 06:57:22,441 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1778
+2018-04-19 06:57:22,690 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1779
+2018-04-19 06:57:26,940 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1796
+2018-04-19 06:57:27,190 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1797
+2018-04-19 06:57:27,440 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1798
+2018-04-19 06:57:27,690 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1799
+2018-04-19 06:57:27,940 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1800
+2018-04-19 06:57:28,190 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1801
+2018-04-19 06:57:28,441 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1802
+Traceback (most recent call last):
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/wishful_module_contikibase/net_connector_module.py", line 25, in set_net_parameter
+    return node.set_parameters(param_list, param_key_values_dict)
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/wishful_module_gitar/rpc_node.py", line 203, in set_parameters
+    resp_key_values[param.name] = ControlDataType(self.platform.endianness_fmt, self.platform.get_data_type_format_by_name('INT8')).read_bytes(response_message[line_ptr:])
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/wishful_module_gitar/lib_gitar.py", line 38, in read_bytes
+    tpl = struct.unpack(tmp_fmt, buf)
+struct.error: unpack requires a bytes object of length 1
+2018-04-19 06:57:35,707 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1831
+2018-04-19 06:57:35,948 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1832
+2018-04-19 06:57:36,201 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1833
+2018-04-19 06:57:36,448 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1834
+2018-04-19 06:57:36,698 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1835
+2018-04-19 06:57:36,948 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1836
+2018-04-19 06:57:37,198 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1837
+2018-04-19 06:57:44,698 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1867
+2018-04-19 06:57:44,948 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1868
+2018-04-19 06:57:45,198 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1869
+2018-04-19 06:57:45,448 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1870
+2018-04-19 06:57:45,698 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1871
+2018-04-19 06:57:45,948 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1872
+2018-04-19 06:57:51,447 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1894
+2018-04-19 06:57:51,697 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1895
+2018-04-19 06:57:51,947 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1896
+2018-04-19 06:57:52,198 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1897
+2018-04-19 06:57:52,448 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1898
+2018-04-19 06:57:52,698 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1899
+2018-04-19 06:57:52,948 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1900
+2018-04-19 06:57:56,197 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1913
+2018-04-19 06:57:56,447 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1914
+2018-04-19 06:57:56,697 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1915
+2018-04-19 06:57:56,948 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1916
+2018-04-19 06:57:57,198 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1917
+2018-04-19 06:57:57,448 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1918
+2018-04-19 06:57:58,948 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1924
+2018-04-19 06:57:59,197 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1925
+2018-04-19 06:57:59,448 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1926
+2018-04-19 06:57:59,698 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1927
+2018-04-19 06:57:59,948 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1928
+2018-04-19 06:58:00,198 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1929
+2018-04-19 06:58:00,449 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1930
+2018-04-19 06:58:01,448 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1934
+2018-04-19 06:58:01,698 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1935
+2018-04-19 06:58:01,948 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1936
+2018-04-19 06:58:02,198 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1937
+2018-04-19 06:58:02,447 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1938
+2018-04-19 06:58:02,697 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1939
+2018-04-19 06:58:02,948 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1940
+2018-04-19 06:58:03,448 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1942
+2018-04-19 06:58:03,698 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1943
+2018-04-19 06:58:03,947 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1944
+2018-04-19 06:58:04,198 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1945
+2018-04-19 06:58:04,448 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1946
+2018-04-19 06:58:04,698 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1947
+2018-04-19 06:58:04,948 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1948
+2018-04-19 06:58:10,948 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1972
+2018-04-19 06:58:11,198 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1973
+2018-04-19 06:58:11,448 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1974
+2018-04-19 06:58:11,698 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1975
+2018-04-19 06:58:11,947 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1976
+2018-04-19 06:58:12,197 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1977
+2018-04-19 06:58:12,448 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1978
+2018-04-19 06:58:12,698 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1979
+2018-04-19 06:58:12,948 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1980
+2018-04-19 06:58:13,198 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1981
+2018-04-19 06:58:13,448 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1982
+2018-04-19 06:58:13,698 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1983
+2018-04-19 06:58:13,947 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1984
+2018-04-19 06:58:14,197 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1985
+2018-04-19 06:58:14,448 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1986
+2018-04-19 06:58:14,698 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1987
+2018-04-19 06:58:14,948 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1988
+2018-04-19 06:58:15,198 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1989
+2018-04-19 06:58:15,448 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1990
+2018-04-19 06:58:15,697 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1991
+2018-04-19 06:58:15,959 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 1992
+2018-04-19 06:58:17,955 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2000
+2018-04-19 06:58:18,205 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2001
+2018-04-19 06:58:18,455 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2002
+2018-04-19 06:58:18,705 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2003
+2018-04-19 06:58:18,956 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2004
+2018-04-19 06:58:19,206 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2005
+2018-04-19 06:58:19,456 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2006
+2018-04-19 06:58:19,706 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2007
+2018-04-19 06:58:42,963 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2100
+2018-04-19 06:58:43,218 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2101
+2018-04-19 06:58:43,470 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2102
+2018-04-19 06:58:43,721 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2103
+2018-04-19 06:58:43,972 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2104
+2018-04-19 06:58:44,222 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2105
+2018-04-19 06:58:50,221 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2129
+2018-04-19 06:58:50,470 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2130
+2018-04-19 06:58:50,720 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2131
+2018-04-19 06:58:50,971 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2132
+2018-04-19 06:58:51,221 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2133
+2018-04-19 06:58:51,471 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2134
+2018-04-19 06:58:51,721 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2135
+2018-04-19 06:58:52,471 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2138
+2018-04-19 06:58:52,721 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2139
+2018-04-19 06:58:52,971 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2140
+2018-04-19 06:58:53,220 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2141
+2018-04-19 06:58:53,471 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2142
+2018-04-19 06:58:53,721 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2143
+2018-04-19 06:58:53,971 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2144
+2018-04-19 06:58:54,221 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2145
+2018-04-19 06:58:54,971 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2148
+2018-04-19 06:58:55,221 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2149
+2018-04-19 06:58:55,471 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2150
+2018-04-19 06:58:55,721 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2151
+2018-04-19 06:58:55,970 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2152
+2018-04-19 06:58:56,220 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2153
+2018-04-19 06:58:56,471 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2154
+2018-04-19 06:58:56,721 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2155
+2018-04-19 06:59:01,221 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2173
+2018-04-19 06:59:01,471 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2174
+2018-04-19 06:59:01,721 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2175
+2018-04-19 06:59:01,971 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2176
+2018-04-19 06:59:02,228 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2177
+2018-04-19 06:59:02,479 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2178
+2018-04-19 06:59:02,734 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2179
+2018-04-19 06:59:05,978 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2192
+2018-04-19 06:59:06,228 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2193
+2018-04-19 06:59:06,479 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2194
+2018-04-19 06:59:06,729 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2195
+2018-04-19 06:59:06,979 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2196
+2018-04-19 06:59:07,229 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2197
+2018-04-19 06:59:07,479 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2198
+2018-04-19 06:59:07,729 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2199
+2018-04-19 06:59:11,734 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2215
+2018-04-19 06:59:11,979 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2216
+2018-04-19 06:59:12,229 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2217
+2018-04-19 06:59:12,479 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2218
+2018-04-19 06:59:12,728 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2219
+2018-04-19 06:59:12,978 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2220
+2018-04-19 06:59:15,729 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2231
+2018-04-19 06:59:15,979 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2232
+2018-04-19 06:59:16,229 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2233
+2018-04-19 06:59:16,478 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2234
+2018-04-19 06:59:16,728 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2235
+2018-04-19 06:59:16,979 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2236
+2018-04-19 06:59:17,229 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2237
+2018-04-19 06:59:17,479 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2238
+2018-04-19 06:59:20,728 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2251
+2018-04-19 06:59:20,978 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2252
+2018-04-19 06:59:21,228 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2253
+2018-04-19 06:59:21,479 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2254
+2018-04-19 06:59:21,729 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2255
+2018-04-19 06:59:36,487 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2314
+2018-04-19 06:59:36,736 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2315
+2018-04-19 06:59:36,986 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2316
+2018-04-19 06:59:37,236 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2317
+2018-04-19 06:59:37,486 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2318
+2018-04-19 06:59:37,736 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2319
+2018-04-19 06:59:40,487 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2330
+2018-04-19 06:59:40,736 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2331
+2018-04-19 06:59:40,986 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2332
+2018-04-19 06:59:41,236 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2333
+2018-04-19 06:59:41,486 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2334
+2018-04-19 06:59:41,736 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2335
+2018-04-19 06:59:41,987 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2336
+2018-04-19 07:00:00,486 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2410
+2018-04-19 07:00:00,736 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2411
+2018-04-19 07:00:00,986 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2412
+2018-04-19 07:00:01,237 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2413
+2018-04-19 07:00:01,486 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2414
+2018-04-19 07:00:01,736 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2415
+2018-04-19 07:00:01,986 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2416
+2018-04-19 07:00:02,236 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2417
+2018-04-19 07:00:02,486 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2418
+2018-04-19 07:00:03,736 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2423
+2018-04-19 07:00:03,986 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2424
+2018-04-19 07:00:04,236 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2425
+2018-04-19 07:00:04,487 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2426
+2018-04-19 07:00:04,737 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 2427
+Traceback (most recent call last):
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/wishful_module_contikibase/net_connector_module.py", line 25, in set_net_parameter
+    return node.set_parameters(param_list, param_key_values_dict)
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/wishful_module_gitar/rpc_node.py", line 203, in set_parameters
+    resp_key_values[param.name] = ControlDataType(self.platform.endianness_fmt, self.platform.get_data_type_format_by_name('INT8')).read_bytes(response_message[line_ptr:])
+  File "/export/home/testbed-user/wishful_raspberry/dev/lib/python3.4/site-packages/wishful_module_gitar/lib_gitar.py", line 38, in read_bytes
+    tpl = struct.unpack(tmp_fmt, buf)
+struct.error: unpack requires a bytes object of length 1
+2018-04-19 07:04:05,251 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 3389
+2018-04-19 07:04:05,500 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 3390
+2018-04-19 07:04:05,750 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 3391
+2018-04-19 07:04:06,001 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 3392
+2018-04-19 07:04:06,251 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 3393
+2018-04-19 07:04:06,501 - Thread-1   - CoAPWrapper.2 - INFO - Buffer full, Req id 3394
+bash: line 1:  5500 Terminated              python agent.py --config ecoap_external_advanced/ecoap_agent.yaml
